@@ -40,17 +40,22 @@ select{
 }
 
 body {
+        display:flex;
 	background-color:#ebebeb;
+        align-items:center;
+        justify-content:center;
+        margin:0;
+}
+
+a {
+    color:#0e3573;
+    text-decoration:none;
 }
 
  #center {
-	overflow:hidden;
-	margin:0;
-	padding:0;
-	box-sizing:content-box;	
- 	position:absolute;
- 	width:50vw;
- 	left:25vw;
- 	top:25vh;
-	text-align:center;
+    transform:translate(0%,100%);
+    overflow:hidden;
+    padding:0;
+    box-sizing:content-box;	
+    text-align:center;
 }

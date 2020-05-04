@@ -40,9 +40,10 @@ select{
 }
 
 body {
-        display:flex;
-	background-color:#ebebeb;
         align-items:center;
+        text-align:center;
+        display:flex;
+	background-color:#e6f2ff;
         justify-content:center;
         margin:0;
 }
@@ -58,4 +59,24 @@ a {
     padding:0;
     box-sizing:content-box;	
     text-align:center;
+    width: 30%;
+}
+
+#content-left{
+    padding:0;
+    box-sizing:content-box;
+    text-align:center;
+    border-right:thin solid black;
+    margin-top:2.5%;
+    height:97.5%;
+    width:25%;
+    overflow:auto;
+}
+
+#content-right{
+    padding:0;
+    box-sizing:content-box;
+    margin-top:2.5%;
+    height:97.5%;
+    width:75%;
 }

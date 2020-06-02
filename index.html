@@ -11,15 +11,8 @@
 	</head>
 	<body>
 		<script>
-			$.keyframe.define([{
-    				name: 'delayedfadein',
-    				'0%':   {opacity: 0},
-    				'50%': {opacity: 0},
-				'75%': {opacity: 0.5},
-    				'100%': {opacity: 1}
-			}]);
   			if(typeof(localStorage.getItem("welcomeShown")) != null && localStorage.getItem("welcomeShown") != "true"){
-  				$(".fadein").animate(delayedfadein, 3000);
+  				$(".fadein").animate({opacity: 1}, {duration: 4000, easing: "linear"});
     				localStorage.setItem("welcomeShown","true");
   			}
 			else {

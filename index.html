@@ -5,21 +5,19 @@
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<style>
-			.fadein{
-				animation: delayedfadein 4s;
-			}
-			@keyframes delayedfadein {
-				0% {opacity: 0;}
-				50% {opacity: 0;}
-				75% {opacity: 0.5;}
-				100%{opacity: 1;}
-			}
 		</style>
 		<link rel="stylesheet" href="base.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<script>
+			$.keyframe.define([{
+    				name: 'delayedfadein',
+    				'0%':   {opacity: 0},
+    				'50%': {opacity: 0},
+				'75%': {opacity: 0.5},
+    				'100%': {opacity: 1}
+			}]);
 			$(".fade-in-first").addClass("animated fadeInUp");
 				setTimeout(function(){
   					if(typeof(localStorage.getItem("welcomeShown")) != null && localStorage.getItem("welcomeShown") != "true"){

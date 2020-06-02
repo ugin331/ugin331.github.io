@@ -5,20 +5,20 @@
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<style>
+			.fadein{
+				animation: delayedfadein 4s;
+			}
+			@keyframes delayedfadein {
+				0% {opacity: 0;}
+				50% {opacity: 0;}
+				75% {opacity: 0.5;}
+				100%{opacity: 1;}
+			}
 		</style>
-		<link rel="stylesheet" href="base.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="base.css">
 	</head>
 	<body>
-		<script>
-  			if(typeof(localStorage.getItem("welcomeShown")) != null && localStorage.getItem("welcomeShown") != "true"){
-  				$(".fadein").animate({opacity: 1}, {duration: 4000, easing: "linear"});
-    				localStorage.setItem("welcomeShown","true");
-  			}
-			else {
-    				$(".fadein").css("opacity",1);
-  			}
-		</script>
             <div id="center" class="fadein">
                 <h1 style="margin-bottom:0; padding-bottom:0;">Welcome.</h1>
                 <p style="margin-top:0; padding-top:0;">Hi! Welcome to my site! Here you'll find all sorts of different projects of mine (at least once it's finished). Click any link to explore my stuff!</p>

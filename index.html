@@ -19,11 +19,11 @@
     				'100%': {opacity: 1}
 			}]);
   			if(typeof(localStorage.getItem("welcomeShown")) != null && localStorage.getItem("welcomeShown") != "true"){
-  				$(".fadein").animate(delayedfadein);
+  				$(".fadein").animate(delayedfadein, 3000);
     				localStorage.setItem("welcomeShown","true");
   			}
 			else {
-    				$(".fade-in-second").css("opacity",1);
+    				$(".fadein").css("opacity",1);
   			}
 		</script>
             <div id="center" class="fadein">

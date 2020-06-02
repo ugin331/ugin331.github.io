@@ -18,14 +18,13 @@
 				'75%': {opacity: 0.5},
     				'100%': {opacity: 1}
 			}]);
-			$(".fade-in-first").addClass("animated fadeInUp");
-				setTimeout(function(){
-  					if(typeof(localStorage.getItem("welcomeShown")) != null && localStorage.getItem("welcomeShown") != "true"){
-  						$(".fadein").animate(delayedfadein);
-    						localStorage.setItem("welcomeShown","true");
-  					}else{
-    						$(".fade-in-second").css("opacity",1);
-  					}}, 1300);
+  			if(typeof(localStorage.getItem("welcomeShown")) != null && localStorage.getItem("welcomeShown") != "true"){
+  				$(".fadein").animate(delayedfadein);
+    				localStorage.setItem("welcomeShown","true");
+  			}
+			else {
+    				$(".fade-in-second").css("opacity",1);
+  			}
 		</script>
             <div id="center" class="fadein">
                 <h1 style="margin-bottom:0; padding-bottom:0;">Welcome.</h1>

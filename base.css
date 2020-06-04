@@ -124,12 +124,13 @@ a {
 .overlay {
     display: none;
     position: fixed;
-    width: 100vw;
+    width: 200vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
     z-index: 998;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+		margin-left:-100vw;
 }
 .overlay.active {
     display: block;

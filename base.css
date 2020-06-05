@@ -57,6 +57,11 @@ a {
     width: 30%;
 }
 
+.image-container{
+	overflow:none;
+	display:inline-block;
+}
+
 .navbar {
     padding: 15px 10px;
     background: #fff;

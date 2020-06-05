@@ -1,2 +1,2 @@
 # ugin331.github.io
-this website is genuinely terrible. please don't.
+A website for holding all of my various projects throughout the years

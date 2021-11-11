@@ -1,0 +1,34 @@
+/* Anything smaller that 760px is a mobile device */
+@media only screen and (max-width: 760px) {
+    body {
+        grid-template-areas: 'n'            /* Putting our elements as one large column */
+                            'h'
+                            'a'
+                            'm'
+                            'f';
+        grid-template-rows: 50px 240px auto auto 50px;
+        grid-template-columns: auto;
+    }
+    nav {
+        padding: 0 20px;
+    }
+    header h1 span {
+        font-size: 32px;
+        text-align: center;
+    }
+    aside {
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+    aside section {
+        grid-template-columns: 30px 1fr 30px 1fr;
+    }
+    main {
+        margin: 20px 0;
+        padding: 0;
+    }
+    main div {
+        width: 100%;
+        height: 300px;
+    }
+}

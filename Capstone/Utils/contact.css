@@ -1,0 +1,169 @@
+body {
+	display: grid;
+	/* Displays children in a grid */
+	grid-template-areas: 'n n'
+		/* Defines where children are placed in grid */
+		'h h'
+		'm m'
+		'f f';
+	grid-template-rows: 50px 400px auto 50px;
+	/* Defines the height of each grid row */
+	grid-template-columns: 300px auto;
+	/* Defines the width of each grid column */
+	width: 100vw;
+	/* Fits the website to the width of the screen */
+	height: 100vh;
+	/* Fits the website to the height of the screen */
+	overflow-x: hidden;
+	/* Hides scrollbars in x */
+	overflow-y: auto;
+	/* Shows scrollbars in y when needed */
+	margin: 0;
+	/* Removes default white space around body */
+	font-family: 'Montserrat', sans-serif;
+	color: #232323;
+}
+
+button {
+	background-color: #4CAF50;
+	/* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.coloronhover {
+	background-color: white;
+	color: black;
+	border: 2px solid #e7e7e7;
+}
+
+.coloronhover:hover {background-color: #e7e7e7;}
+
+.buttonlink {
+	display: block;
+	color: #232323;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+nav {
+	grid-area: n;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 80px;
+}
+
+nav a {
+	display: block;
+	padding: 0 20px;
+	color: #232323;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+header {
+	grid-area: h;
+	background-image: url("https://cdn.discordapp.com/attachments/882134233441787904/886849627993821204/unknown.png");
+	background-position: center bottom;
+	background-size: cover;
+	background-color: lightyellow;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+header h1 {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+header h1 span {
+	color: white;
+	font-size: 48px;
+	font-weight: 700;
+	text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+main {
+	grid-area: m;
+	margin: 40px 0;
+	padding: 0 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+main div {
+	width: 280px;
+	height: 320px;
+	overflow: hidden;
+	background-color: #F4F6F7;
+	margin: 20px;
+}
+
+main div img {
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+
+.kabir {
+	object-fit: cover;
+	object-position: 50% 0%;
+}
+
+main div h3 {
+	padding: 0;
+	margin: 16px;
+	font-weight: 600;
+}
+
+main div h4 {
+	padding: 0;
+	margin: 16px;
+	font-weight: 200;
+	color: #FF4500;
+	line-height: 1.5;
+}
+
+main div a {
+	display: block;
+	padding: 0;
+	margin: 16px;
+	font-weight: 400;
+	color: #000000;
+	line-height: 1.5;
+}
+
+footer {
+	grid-area: f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #f4f6f7;
+	color: #696969;
+	font-weight: 200;
+	font-size: 14px;
+}

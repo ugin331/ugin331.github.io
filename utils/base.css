@@ -205,3 +205,15 @@ ul ul a {
     top: 0;
     right: 0;
 }
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #f4f6f7;
+    margin-top:2%;
+	color: #696969;
+	font-weight: 200;
+	font-size: 14px;
+    flex-shrink:0;
+}

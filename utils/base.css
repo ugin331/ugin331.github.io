@@ -39,7 +39,8 @@ body {
   align-items:center;
   text-align:center;
   display:flex;
-	background-color:#fafaff;
+  flex-direction:column;
+  background-color:#fafaff;
   justify-content:center;
   margin:0;
 }
@@ -204,6 +205,7 @@ ul ul a {
     position: absolute;
     top: 0;
     right: 0;
+    flex:1 0 auto;
 }
 
 footer {
